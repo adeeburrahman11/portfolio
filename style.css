@@ -105,3 +105,9 @@ span{
 .auto-type{
     color: #53565A;
 }
+
+/* --------------------ABOUT-------------------- */
+.about-blob{
+    height: 450px;
+    width: 450px;
+}
