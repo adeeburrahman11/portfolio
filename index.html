@@ -28,7 +28,7 @@
                 <p>
                     <span class="auto-type"></span>
                 </p>
-                <h1>My name is <span>Adeebur Rahman</span><br>I'm a Student.</h1>
+                <h1>My name is <span class="myname">Adeebur Rahman</span><br>I'm a Student.</h1>
             </div>
             <div class="box-img">
                 <img src="images/background.jpg" alt="profile pic" class="pfp">
@@ -78,11 +78,29 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Student pursuing my Bachelor's degree in Computer Science & Engineering from Nagpur, Maharashtra. </p>
+                    <br><br>
+                    <p class="about-desc">Student pursuing my Bachelor's degree in Computer Science & Engineering from Nagpur, Maharashtra. Detail-oriented and ambitious engineering student with a passion for obtaining accurate results and working on a team. Seeking an entry-level position in the engineering industry to pursue a career as a Full-Stack Developer and improve my skill set.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end Development</span><br><p class="tab-desc">Designing Web app interfaces</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br><p class="tab-desc">B.Tech in CSE from S. B. Jain Institute of Technology, Management and Research, Nagpur</p></li>
+                            <li><span>2021</span><br><p class="tab-desc">HSC from S. K. Porwal College, Kamptee.</p></li>
+                            <li><span>2019</span><br><p class="tab-desc">SSC from St. Joesph's Convent High School, Kamptee.</p></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+     <!-- --------------------SKILLS-------------------- -->
 
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -94,6 +112,20 @@
             backSpeed: 150,
             loop: true
         });
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tlink of tablinks){
+                tlink.classList.remove("active-link");
+            }
+            for(tcontent of tabcontents){
+                tcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
     </script>
 </body>
 
