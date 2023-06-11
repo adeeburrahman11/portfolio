@@ -20,8 +20,8 @@ body{
     position: relative;
     /* margin-right: 200px; */
     /* margin-top: 50px; */
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     float: right; 
     border-radius: 36% 62% 38% 51% / 49% 49% 43% 43% ;
     transition: 0.5s;
@@ -29,8 +29,8 @@ body{
 
 
 .pfp:hover{
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     box-shadow: 10px 10px 8px #888888;
     border-radius: 62% 35% 60% 39% / 56% 52% 48% 43% ;
 }
