@@ -25,7 +25,9 @@
         </div>
         <div class="section">
             <div class="header-txt">
-                <p style="color: #53565A;">Hello there...</p>
+                <p>
+                <span class="auto-type"></span>
+                </p>
                 <h1>My name is <span>Adeebur Rahman</span><br>I'm a Student.</h1>
             </div>
             <div class="box-img">
@@ -37,12 +39,22 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    
+
                 </div>
                 <div class="about-col-2"></div>
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Hello there...","Namaste"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+    </script>
 </body>
 
 </html>

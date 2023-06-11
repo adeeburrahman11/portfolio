@@ -29,8 +29,8 @@ body{
 
 
 .pfp:hover{
-    height: 350px;
-    width: 350px;
+    height: 330px;
+    width: 330px;
     box-shadow: 10px 10px 8px #888888;
     border-radius: 62% 35% 60% 39% / 56% 52% 48% 43% ;
 }
@@ -90,7 +90,7 @@ nav ul li a:hover::after{
 
 .header-txt{
     margin-top: 4%;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .header-txt h1{
@@ -100,4 +100,8 @@ nav ul li a:hover::after{
 
 span{
     color: #F4D800;
+}
+
+.auto-type{
+    color: #53565A;
 }
