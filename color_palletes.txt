@@ -2,6 +2,7 @@ Black : #050707
 Yellow : #F4D800
 Cool grey : #53565A
 Baby blue : #ECF1F2
+#ecf1f2
 
 <svg class="about-blob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="maskBorder" mask-type="alpha">
