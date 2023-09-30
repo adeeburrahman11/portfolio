@@ -471,7 +471,7 @@ nav ul li a:hover::after {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid #53565a;
+  border: 1px solid #f4d800;
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
@@ -482,6 +482,83 @@ nav ul li a:hover::after {
 }
 
 .btn-projects:hover {
-  background: #53565a;
+  background: #f4d800;
   color: #ecf1f2;
+}
+
+/* --------------------contact-------------------- */
+
+.contact-left {
+  flex-basis: 35%;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+.contact-left p {
+  margin-top: 30px;
+}
+
+.contact-left p i {
+  color: #f4d800;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  display: inline-block;
+  color: #53565a;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: #f4d800;
+  transform: translateY(-5px);
+}
+
+.btn-projects.btn2 {
+  display: inline-block;
+  background: #f4d800;
+}
+
+.contact-right form {
+  width: 100%;
+  margin-top: 30px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #ecf1f2;
+  padding: 15px;
+  margin: 15px 0;
+  color: #080808;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form .btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #ecf1f2;
+  font-weight: 300;
+  margin-top: 20px;
 }
