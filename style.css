@@ -4,6 +4,9 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: rgb(255, 255, 255);
   color: #080808;
@@ -15,7 +18,7 @@ body {
 
 .pfp {
   position: relative;
-  height: 300px;
+  height: auto;
   width: 300px;
   float: right;
   border-radius: 36% 62% 38% 51% / 49% 49% 43% 43%;
@@ -245,11 +248,11 @@ nav ul li a:hover::after {
 /* --------------------SKILLS-------------------- */
 
 #Skill {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .title_head {
   width: 100%;
-  margin: 80px 0px;
+  margin: 40px 0px;
   display: grid;
   place-items: center;
   text-align: center;
@@ -398,9 +401,9 @@ nav ul li a:hover::after {
 
 /* --------------------projects-------------------- */
 
-#projects {
-  padding: 50px 0;
-}
+/* #projects {
+  padding: 10px 0;
+} */
 
 .work-list {
   display: grid;
@@ -561,4 +564,115 @@ form .btn2 {
   background: #ecf1f2;
   font-weight: 300;
   margin-top: 20px;
+}
+
+/* --------------------css for small screens-------------------- */
+nav .fa-solid {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .header-txt {
+    /* margin-top: 100%; */
+    margin-top: 50px;
+    font-size: 16px;
+  }
+  .header-txt h1 {
+    font-size: 30px;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background: #f4d800;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 4;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .sub-title {
+    font-size: 40px;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+  .about-col-2 {
+    font-size: 14px;
+  }
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+    text-align: left;
+  }
+  .tab-contents {
+    text-align: left;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+  .pfp {
+    float: none; /* Remove the float on small screens */
+    width: 300px; /* Make the image take full width on small screens */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  .section {
+    padding: 20px 5%; /* Adjusted padding for 600px screen size */
+    margin-top: 0;
+  }
+
+  .header-txt {
+    text-align: center; /* Center-align text on small screens */
+    font-size: 28px; /* Adjust font size for small screens */
+  }
+
+  .header-txt h1 {
+    font-size: 42px; /* Adjust font size for small screens */
+    margin-top: 10px; /* Adjust margin-top for small screens */
+  }
+  .about-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-img::before {
+    inset: -5px 50px;
+  }
+
+  .sub-title {
+    font-size: 40px;
+  }
+
+  .about-desc {
+    font-size: 16px;
+  }
 }
