@@ -187,6 +187,8 @@ nav ul li a:hover::after {
   font-size: 60px;
   font-weight: 800;
   color: #53565a;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .about-desc {
@@ -267,9 +269,9 @@ nav ul li a:hover::after {
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 30px;
   grid-column-gap: 50px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   background-color: #ecf1f2;
-  padding: 5rem;
+  padding: 3rem;
   border: 6px solid #53565a;
   border-radius: 30px;
 }
@@ -572,6 +574,10 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 900px) {
+  #header {
+    height: 80vh;
+  }
+
   .header-txt {
     /* margin-top: 100%; */
     margin-top: 50px;
@@ -674,5 +680,8 @@ nav .fa-solid {
 
   .about-desc {
     font-size: 16px;
+  }
+  .skills_main {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
