@@ -11,9 +11,61 @@ body {
   background: rgb(255, 255, 255);
   color: #080808;
 }
+
+::-webkit-scrollbar {
+  background-color: #53565a;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f4d800;
+  border-radius: 0.5rem;
+  border: 4px solid transparent;
+  background-clip: content-box;
+}
+
 #header {
   width: 100%;
   height: 100vh;
+}
+
+#checkbox {
+  visibility: hidden;
+  width: 0;
+}
+
+#checkbox:checked + .toggle-label .toggle-ball {
+  transform: translateX(2rem);
+  background-color: #53565a;
+}
+
+.toggle-label {
+  width: 4rem;
+  height: 2rem;
+  background-color: #080808;
+  display: inline-block;
+  position: relative;
+  border-radius: 4rem;
+  right: 0;
+  cursor: pointer;
+}
+
+.toggle-ball {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #f4d800;
+  display: inline-block;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+  transition: 0.2s linear;
+}
+
+.toggle-btn {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .pfp {
@@ -35,6 +87,7 @@ body {
 .logo {
   height: 80px;
   width: 80px;
+  cursor: pointer;
 }
 
 .container {
@@ -578,6 +631,31 @@ form .btn2 {
   color: #61b752;
   margin-top: -40px;
   display: block;
+}
+
+#progress {
+  background-color: #f4d800;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: none;
+  place-items: center;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  cursor: pointer;
+}
+
+#progress_value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #53565a;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #080808;
 }
 
 /* --------------------css for small screens-------------------- */

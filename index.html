@@ -23,6 +23,14 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    <li>
+                        <div class="toggle-btn">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox" class="toggle-label">
+                                <span class="toggle-ball"></span>
+                            </label>
+                        </div>
+                    </li>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
@@ -247,57 +255,12 @@
             <p>Copyright © 2023 Adeebur Rahman. Made with <i class="fa-solid fa-heart"></i></p>
         </div>
     </div>
+    <div id="progress">
+        <span id="progress_value"><i class="fa-solid fa-up-long fa-bounce fa-xl"></i></span>
+    </div>
 
 </body>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-<script>
-    var typed = new Typed(".auto-type", {
-        strings: ["Hello there...", "...ٱلسَّلَامُ عَلَيْكُمْ", "नमस्ते...", "ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ..."],
-        typeSpeed: 150,
-        backSpeed: 150,
-        loop: true
-    });
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname) {
-        for (tlink of tablinks) {
-            tlink.classList.remove("active-link");
-        }
-        for (tcontent of tabcontents) {
-            tcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu() {
-        sidemenu.style.right = "0"
-    }
-
-    function closemenu() {
-        sidemenu.style.right = "-200px"
-    }
-
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbw1gXeNsy7-cuv8CI_acpo497UcTMJqbbSXHWY6UfgOWfaS5fKntcyylvi4gisdsIXuLQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function () {
-                    msg.innerHTML = ""
-                }, 5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-    })
-</script>
+<script src="script.js"></script>
 
 </html>
