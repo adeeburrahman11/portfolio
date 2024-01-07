@@ -26,7 +26,7 @@ body {
 }
 
 .pfp:hover {
-  height: 330px;
+  height: auto;
   width: 330px;
   box-shadow: 10px 10px 8px #888888;
   border-radius: 62% 35% 60% 39% / 56% 52% 48% 43%;
@@ -269,7 +269,7 @@ nav ul li a:hover::after {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 30px;
-  grid-column-gap: 50px;
+  grid-column-gap: 10%;
   /* padding-bottom: 50px; */
   background-color: #ecf1f2;
   padding: 5%;
@@ -410,9 +410,10 @@ nav ul li a:hover::after {
 
 .work-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 100px;
   margin-top: 50px;
+  align-items: center;
 }
 
 .work {
@@ -567,6 +568,10 @@ form .btn2 {
   background: #ecf1f2;
   font-weight: 300;
   margin-top: 20px;
+}
+
+.copyright .fa-solid {
+  color: red;
 }
 
 /* --------------------css for small screens-------------------- */
