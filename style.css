@@ -27,7 +27,7 @@ body {
 
 .pfp:hover {
   height: auto;
-  width: 330px;
+  width: 320px;
   box-shadow: 10px 10px 8px #888888;
   border-radius: 62% 35% 60% 39% / 56% 52% 48% 43%;
 }
@@ -572,6 +572,12 @@ form .btn2 {
 
 .copyright .fa-solid {
   color: red;
+}
+
+#msg {
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
 }
 
 /* --------------------css for small screens-------------------- */
