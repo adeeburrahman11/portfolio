@@ -579,11 +579,6 @@ nav ul li a:hover::after {
   margin-top: 30px;
 }
 
-.contact-left p a {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-
 .contact-left p i {
   color: #f4d800;
   margin-right: 15px;
