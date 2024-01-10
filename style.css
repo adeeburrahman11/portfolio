@@ -685,7 +685,7 @@ nav .fa-solid {
 
 @media only screen and (max-width: 900px) {
   #header {
-    height: 100vh;
+    height: 100%;
   }
 
   #logo {
