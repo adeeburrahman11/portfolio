@@ -15,7 +15,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.WebP" alt="logo" class="logo">
+                <img id="logo" src="images/logo.WebP" alt="logo">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -27,7 +27,7 @@
                         <div class="toggle-btn">
                             <input type="checkbox" id="checkbox">
                             <label for="checkbox" class="toggle-label">
-                                <span class="toggle-ball"></span>
+                                <span class="toggle-ball"><img id="toggle-img" src="images/mode1.WebP"></span>
                             </label>
                         </div>
                     </li>
@@ -40,7 +40,7 @@
                 <p>
                     <span class="auto-type"></span>
                 </p>
-                <h1>My name is <span class="myname">Adeebur Rahman</span><br>I'm a Student.</h1>
+                <h1>My name is <span class="myname">Adeebur Rahman</span><br>I'm a Frontend Developer.</h1>
                 <a href="#contact" class="btn-projects btn2">Contact Me</a>
             </div>
             <div class="box-img">
@@ -77,6 +77,10 @@
                         <ul>
                             <li><span>Front-end Development</span><br>
                                 <p class="tab-desc">Designing Web app interfaces</p>
+                            </li>
+                            <li><span>Flutter Development</span><br>
+                                <p class="tab-desc">Build an application's user interface (UI) for multiple platforms
+                                    with a single codebase</p>
                             </li>
                         </ul>
                     </div>
@@ -172,7 +176,7 @@
                 <div class="skill_bar">
                     <div class="info">
                         <p>Flutter Android</p>
-                        <P>0%</P>
+                        <P>10%</P>
                     </div>
                     <div class="bar">
                         <span class="flutter"></span>
@@ -192,29 +196,34 @@
                 <div class="work">
                     <img src="images/navbar.WebP" alt="">
                     <div class="layer">
-                        <h3>Project Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, suscipit.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Responsive Navigation Bar</h3>
+                        <p>A responsive navigation bar made using React</p>
+                        <a href="https://github.com/adeeburrahman11/react-navbar/tree/main/react-navbar"
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/portfolio.WebP" alt="">
                     <div class="layer">
-                        <h3>Project Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, suscipit.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Portfolio</h3>
+                        <p>My Portfolio made using HTML, CSS and JavaScript. Responsive for different screen ratios with
+                            added dark theme option</p>
+                        <a href="https://github.com/adeeburrahman11/portfolio" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/logo.WebP" alt="">
+                    <img src="images/dice_roll.WebP" alt="">
                     <div class="layer">
-                        <h3>Project Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, suscipit.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Dice Roll</h3>
+                        <p>A dice roll mobile application made using Flutter</p>
+                        <a href="https://github.com/adeeburrahman11/dice_roll" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="https://github.com/adeeburrahman11?tab=repositories" class="btn-projects">See more</a>
+            <a href="https://github.com/adeeburrahman11?tab=repositories" class="btn-projects" target="_blank">See
+                more</a>
         </div>
     </div>
     <!-- --------------------Contact-------------------- -->
@@ -229,7 +238,7 @@
                     <p><i class="fa-regular fa-envelope "></i> adeeburrahman9021@gmail.com</p>
                     <p><i class="fa-solid fa-mobile-screen-button "></i> +91 9623244898</p>
                     <div class="social-icons">
-                        <a href="https://instagram.com/jod_addy11?igshid=MzMyNGUyNmU2YQ==" target="_blank"><i
+                        <a href="https://www.instagram.com/just.addy_11/?igshid=MzMyNGUyNmU2YQ%3D%3D" target="_blank"><i
                                 class="fa-brands fa-instagram "></i></a>
                         <a href="https://twitter.com/adeebur_rahman" target="_blank"><i
                                 class="fa-brands fa-x-twitter "></i></a>
@@ -242,9 +251,10 @@
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="text" name="email" placeholder="Your E-mail" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <input type="text" name="Name" placeholder="Your Name" autocomplete="name">
+                        <input type="text" name="email" placeholder="Your E-mail" autocomplete="email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" autocomplete="off"
+                            required></textarea>
                         <button type="submit" class="btn-projects btn2">Submit</button>
                     </form>
                     <div id="msg"></div>
