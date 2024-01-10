@@ -414,7 +414,7 @@ nav ul li a:hover::after {
   }
 }
 .skill_bar .bar .js {
-  width: 20%;
+  width: 50%;
   animation: js 2s;
 }
 @keyframes js {
@@ -422,7 +422,7 @@ nav ul li a:hover::after {
     width: 0%;
   }
   100% {
-    width: 20%;
+    width: 50%;
   }
 }
 .skill_bar .bar .python {

@@ -9,6 +9,7 @@
     <title>Adeeb's Portfolio</title>
     <link rel="icon" type="image/WebP" href="images/logo.WebP">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/a5e399e8b1.js" crossorigin="anonymous"></script>
 </head>
 
@@ -38,13 +39,14 @@
         </div>
         <div class="section">
             <div class="header-txt">
-                <p>
+                <p data-aos="fade-down">
                     <span class="auto-type"></span>
                 </p>
-                <h1>My name is <span class="myname">Adeebur Rahman</span><br>I'm a Frontend Developer.</h1>
-                <a href="#contact" class="btn-projects btn2">Contact Me</a>
+                <h1 data-aos="fade-up">My name is <span class="myname">Adeebur Rahman</span><br>I'm a Frontend
+                    Developer.</h1>
+                <a href="#contact" class="btn-projects btn2" data-aos="fade-up">Contact Me</a>
             </div>
-            <div class="box-img">
+            <div class="box-img" data-aos="fade-up">
                 <img src="images/background1.WebP" alt="profile pic" class="pfp">
             </div>
 
@@ -53,12 +55,12 @@
     <!-- --------------------ABOUT-------------------- -->
     <div id="about">
         <div class="container">
-            <div class="sub-title">
+            <div class="sub-title" data-aos="zoom-in-down">
                 <p>About</p>
             </div>
             <div class="row">
                 <div class="about-col-1">
-                    <div class="about-img">
+                    <div class="about-img" data-aos="zoom-in-up">
                         <div class="img-content">
                             <img src="images/img1.WebP" alt="">
                         </div>
@@ -66,15 +68,16 @@
                 </div>
                 <div class="about-col-2">
                     <br>
-                    <p class="about-desc">Student pursuing my Bachelor's degree in Computer Science & Engineering from
+                    <p class="about-desc" data-aos="flip-right">Student pursuing my Bachelor's degree in Computer
+                        Science & Engineering from
                         Nagpur, Maharashtra. Detail-oriented and ambitious engineering student with a passion for
                         obtaining accurate results and working on a team. Seeking an entry-level position in the
                         engineering industry to pursue a career as a Full-Stack Developer and improve my skill set.</p>
                     <div class="tab-title">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')" data-aos="fade-down">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')" data-aos="fade-down">Education</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="skills" data-aos="fade-up">
                         <ul>
                             <li><span>Front-end Development</span><br>
                                 <p class="tab-desc">Designing Web app interfaces</p>
@@ -85,7 +88,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="education">
+                    <div class="tab-contents" id="education" data-aos="fade-up">
                         <ul>
                             <li><span>2025</span><br>
                                 <p class="tab-desc">B.Tech in CSE from S. B. Jain Institute of Technology, Management
@@ -107,79 +110,79 @@
 
     <div id="Skill">
         <div class="container">
-            <div class="title_head">
+            <div class="title_head" data-aos="zoom-in-down">
                 <p>My Skills</p>
             </div>
-            <div class="skills_main">
+            <div class="skills_main" data-aos="fade-up">
                 <div class="skill_bar">
-                    <div class="info">
+                    <div class="info" data-aos="fade-up">
                         <p>HTML</p>
                         <P>90%</P>
                     </div>
-                    <div class="bar">
+                    <div class="bar" data-aos="fade-up">
                         <span class="html"></span>
                     </div>
                 </div>
                 <div class="skill_bar">
-                    <div class="info">
+                    <div class="info" data-aos="fade-up">
                         <p>CSS</p>
                         <P>80%</P>
                     </div>
-                    <div class="bar">
+                    <div class="bar" data-aos="fade-up">
                         <span class="css"></span>
                     </div>
                 </div>
                 <div class="skill_bar">
-                    <div class="info">
+                    <div class="info" data-aos="fade-up">
                         <p>Java Script</p>
-                        <P>20%</P>
+                        <P>50%</P>
                     </div>
-                    <div class="bar">
+                    <div class="bar" data-aos="fade-up">
                         <span class="js"></span>
                     </div>
                 </div>
                 <div class="skill_bar">
-                    <div class="info">
+                    <div class="info" data-aos="fade-up">
                         <p>C</p>
                         <P>85%</P>
                     </div>
-                    <div class="bar">
+                    <div class="bar" data-aos="fade-up">
                         <span class="c"></span>
                     </div>
                 </div>
                 <div class="skill_bar">
-                    <div class="info">
+                    <div class="info" data-aos="up">
                         <p>Python</p>
                         <P>40%</P>
                     </div>
-                    <div class="bar">
+                    <div class="bar" data-aos="fade-up">
                         <span class="python"></span>
                     </div>
                 </div>
                 <div class="skill_bar">
-                    <div class="info">
+                    <div class="info" data-aos="fade-up">
                         <p>JAVA</p>
                         <P>30%</P>
                     </div>
-                    <div class="bar">
+                    <div class="bar" data-aos="fade-up">
                         <span class="java"></span>
                     </div>
                 </div>
                 <div class="skill_bar">
-                    <div class="info">
+                    <div class="info" data-aos="fade-up">
                         <p>React</p>
                         <P>40%</P>
                     </div>
-                    <div class="bar">
+                    <div class="bar" data-aos="fade-up">
                         <span class="react"></span>
                     </div>
                 </div>
                 <div class="skill_bar">
-                    <div class="info">
+                    <div class="info" data-aos="fade-up">
                         <p>Flutter Android</p>
                         <P>10%</P>
                     </div>
-                    <div class="bar">
+                    <div class="bar" data-aos="fade-up">
                         <span class="flutter"></span>
                     </div>
                 </div>
@@ -190,11 +193,11 @@
 
     <div id="projects">
         <div class="container">
-            <div class="title_head">
+            <div class="title_head" data-aos="zoom-in-down">
                 <p>My Projects</p>
             </div>
             <div class="work-list">
-                <div class="work">
+                <div class="work" data-aos="fade-up">
                     <img src="images/navbar.WebP" alt="">
                     <div class="layer">
                         <h3>Responsive Navigation Bar</h3>
@@ -203,7 +206,7 @@
                             target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
+                <div class="work" data-aos="fade-up">
                     <img src="images/portfolio.WebP" alt="">
                     <div class="layer">
                         <h3>Portfolio</h3>
@@ -213,7 +216,7 @@
                                 class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
+                <div class="work" data-aos="fade-up">
                     <img src="images/dice_roll.WebP" alt="">
                     <div class="layer">
                         <h3>Dice Roll</h3>
@@ -223,7 +226,8 @@
                     </div>
                 </div>
             </div>
-            <a href="https://github.com/adeeburrahman11?tab=repositories" class="btn-projects" target="_blank">See
+            <a href="https://github.com/adeeburrahman11?tab=repositories" class="btn-projects" target="_blank"
+                data-aos="fade-up">See
                 more</a>
         </div>
     </div>
@@ -233,15 +237,15 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <div class="sub-title">
+                    <div class="sub-title" data-aos="zoom-in-down">
                         <p>Contact Me</p>
                     </div>
-                    <p>
+                    <p data-aos="fade-down">
                         <i class="fa-regular fa-envelope "></i>adeeburrahman9021@gmail.com
                     </p>
-                    <p><i class="fa-solid fa-mobile-screen-button "></i> +91
+                    <p data-aos="fade-down"><i class="fa-solid fa-mobile-screen-button "></i> +91
                         9623244898</p>
-                    <div class="social-icons">
+                    <div class="social-icons" data-aos="fade-up">
                         <a href="https://www.instagram.com/just.addy_11/?igshid=MzMyNGUyNmU2YQ%3D%3D" target="_blank"><i
                                 class="fa-brands fa-instagram "></i></a>
                         <a href="https://twitter.com/adeebur_rahman" target="_blank"><i
@@ -251,15 +255,16 @@
                         <a href="https://github.com/adeeburrahman11" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
                     </div>
-                    <a href="images/AdeeburRahman_Resume.pdf" download class="btn-projects btn2">Download Resume</a>
+                    <a href="images/AdeeburRahman_Resume.pdf" download class="btn-projects btn2"
+                        data-aos="zoom-in-up">Download Resume</a>
                 </div>
-                <div class="contact-right">
+                <div class="contact-right" data-aos="fade-in">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" autocomplete="name">
                         <input type="text" name="email" placeholder="Your E-mail" autocomplete="email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message" autocomplete="off"
                             required></textarea>
-                        <button type="submit" class="btn-projects btn2">Submit</button>
+                        <button type="submit" class="btn-projects btn2" data-aos="fade-up">Submit</button>
                     </form>
                     <div id="msg"></div>
                 </div>
@@ -276,5 +281,12 @@
 </body>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 80,
+        // delay: 500,
+    });
+</script>
 
 </html>
