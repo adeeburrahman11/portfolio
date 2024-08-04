@@ -1,292 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the portfolio website of Adeebur Rahman">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is the portfolio website of Adeebur Rahman"
+    />
     <title>Adeeb's Portfolio</title>
-    <link rel="icon" type="image/WebP" href="images/logo.WebP">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/WebP" href="images/logo.WebP" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://kit.fontawesome.com/a5e399e8b1.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/a5e399e8b1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img id="logo" src="images/logo.WebP" alt="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#Skill">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                    <li>
-                        <div class="toggle-btn">
-                            <input type="checkbox" id="checkbox">
-                            <label for="checkbox" class="toggle-label">
-                                <span class="toggle-ball"><img id="toggle-img" src="images/mode1.WebP"></span>
-                            </label>
-                        </div>
-                    </li>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
+      <div class="container">
+        <nav>
+          <img id="logo" src="images/logo.WebP" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Skill">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            <li>
+              <div class="toggle-btn">
+                <input type="checkbox" id="checkbox" />
+                <label for="checkbox" class="toggle-label">
+                  <span class="toggle-ball"
+                    ><img id="toggle-img" src="images/mode1.WebP"
+                  /></span>
+                </label>
+              </div>
+            </li>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+      <div class="section">
+        <div class="header-txt">
+          <p data-aos="fade-down">
+            <span class="auto-type"></span>
+          </p>
+          <h1 data-aos="fade-up">
+            My name is <span class="myname">Adeebur Rahman</span><br />I'm a
+            Frontend Developer.
+          </h1>
+          <a href="#contact" class="btn-projects btn2" data-aos="fade-up"
+            >Contact Me</a
+          >
         </div>
-        <div class="section">
-            <div class="header-txt">
-                <p data-aos="fade-down">
-                    <span class="auto-type"></span>
-                </p>
-                <h1 data-aos="fade-up">My name is <span class="myname">Adeebur Rahman</span><br>I'm a Frontend
-                    Developer.</h1>
-                <a href="#contact" class="btn-projects btn2" data-aos="fade-up">Contact Me</a>
-            </div>
-            <div class="box-img" data-aos="fade-up">
-                <img src="images/background1.WebP" alt="profile pic" class="pfp">
-            </div>
-
+        <div class="box-img" data-aos="fade-up">
+          <img src="images/background1.WebP" alt="profile pic" class="pfp" />
         </div>
+      </div>
     </div>
     <!-- --------------------ABOUT-------------------- -->
     <div id="about">
-        <div class="container">
-            <div class="sub-title" data-aos="zoom-in-down">
-                <p>About</p>
-            </div>
-            <div class="row">
-                <div class="about-col-1">
-                    <div class="about-img" data-aos="zoom-in-up">
-                        <div class="img-content">
-                            <img src="images/img1.WebP" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="about-col-2">
-                    <br>
-                    <p class="about-desc" data-aos="flip-right">Student pursuing my Bachelor's degree in Computer
-                        Science & Engineering from
-                        Nagpur, Maharashtra. Detail-oriented and ambitious engineering student with a passion for
-                        obtaining accurate results and working on a team. Seeking an entry-level position in the
-                        engineering industry to pursue a career as a Full-Stack Developer and improve my skill set.</p>
-                    <div class="tab-title">
-                        <p class="tab-links active-link" onclick="opentab('skills')" data-aos="fade-down">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')" data-aos="fade-down">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills" data-aos="fade-up">
-                        <ul>
-                            <li><span>Front-end Development</span><br>
-                                <p class="tab-desc">Designing Web app interfaces</p>
-                            </li>
-                            <li><span>Flutter Development</span><br>
-                                <p class="tab-desc">Build an application's user interface (UI) for multiple platforms
-                                    with a single codebase</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education" data-aos="fade-up">
-                        <ul>
-                            <li><span>2025</span><br>
-                                <p class="tab-desc">B.Tech in CSE from S. B. Jain Institute of Technology, Management
-                                    and Research, Nagpur</p>
-                            </li>
-                            <li><span>2021</span><br>
-                                <p class="tab-desc">HSC from S. K. Porwal College, Kamptee.</p>
-                            </li>
-                            <li><span>2019</span><br>
-                                <p class="tab-desc">SSC from St. Joesph's Convent High School, Kamptee.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="sub-title" data-aos="zoom-in-down">
+          <p>About</p>
         </div>
+        <div class="row">
+          <div class="about-col-1">
+            <div class="about-img" data-aos="zoom-in-up">
+              <div class="img-content">
+                <img src="images/img1.WebP" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="about-col-2">
+            <br />
+            <p class="about-desc" data-aos="flip-right">
+              Student pursuing my Bachelor's degree in Computer Science &
+              Engineering from Nagpur, Maharashtra. Detail-oriented and
+              ambitious engineering student with a passion for obtaining
+              accurate results and working on a team. Seeking an entry-level
+              position in the engineering industry to pursue a career as a
+              Full-Stack Developer and improve my skill set.
+            </p>
+            <div class="tab-title">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('skills')"
+                data-aos="fade-down"
+              >
+                Skills
+              </p>
+              <p
+                class="tab-links"
+                onclick="opentab('education')"
+                data-aos="fade-down"
+              >
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills" data-aos="fade-up">
+              <ul>
+                <li>
+                  <span>Front-end Development</span><br />
+                  <p class="tab-desc">Designing Web app interfaces</p>
+                </li>
+                <li>
+                  <span>Flutter Development</span><br />
+                  <p class="tab-desc">
+                    Build an application's user interface (UI) for multiple
+                    platforms with a single codebase
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education" data-aos="fade-up">
+              <ul>
+                <li>
+                  <span>2025</span><br />
+                  <p class="tab-desc">
+                    B.Tech in CSE from S. B. Jain Institute of Technology,
+                    Management and Research, Nagpur
+                  </p>
+                </li>
+                <li>
+                  <span>2021</span><br />
+                  <p class="tab-desc">
+                    HSC from S. K. Porwal College, Kamptee.
+                  </p>
+                </li>
+                <li>
+                  <span>2019</span><br />
+                  <p class="tab-desc">
+                    SSC from St. Joesph's Convent High School, Kamptee.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- --------------------SKILLS-------------------- -->
 
     <div id="Skill">
-        <div class="container">
-            <div class="title_head" data-aos="zoom-in-down">
-                <p>My Skills</p>
-            </div>
-            <div class="skills_main" data-aos="fade-up">
-                <div class="skill_bar">
-                    <div class="info" data-aos="fade-up">
-                        <p>HTML</p>
-                        <P>90%</P>
-                    </div>
-                    <div class="bar" data-aos="fade-up">
-                        <span class="html"></span>
-                    </div>
-                </div>
-                <div class="skill_bar">
-                    <div class="info" data-aos="fade-up">
-                        <p>CSS</p>
-                        <P>80%</P>
-                    </div>
-                    <div class="bar" data-aos="fade-up">
-                        <span class="css"></span>
-                    </div>
-                </div>
-                <div class="skill_bar">
-                    <div class="info" data-aos="fade-up">
-                        <p>Java Script</p>
-                        <P>50%</P>
-                    </div>
-                    <div class="bar" data-aos="fade-up">
-                        <span class="js"></span>
-                    </div>
-                </div>
-                <div class="skill_bar">
-                    <div class="info" data-aos="fade-up">
-                        <p>C</p>
-                        <P>85%</P>
-                    </div>
-                    <div class="bar" data-aos="fade-up">
-                        <span class="c"></span>
-                    </div>
-                </div>
-                <div class="skill_bar">
-                    <div class="info" data-aos="up">
-                        <p>Python</p>
-                        <P>40%</P>
-                    </div>
-                    <div class="bar" data-aos="fade-up">
-                        <span class="python"></span>
-                    </div>
-                </div>
-                <div class="skill_bar">
-                    <div class="info" data-aos="fade-up">
-                        <p>JAVA</p>
-                        <P>30%</P>
-                    </div>
-                    <div class="bar" data-aos="fade-up">
-                        <span class="java"></span>
-                    </div>
-                </div>
-                <div class="skill_bar">
-                    <div class="info" data-aos="fade-up">
-                        <p>React</p>
-                        <P>40%</P>
-                    </div>
-                    <div class="bar" data-aos="fade-up">
-                        <span class="react"></span>
-                    </div>
-                </div>
-                <div class="skill_bar">
-                    <div class="info" data-aos="fade-up">
-                        <p>Flutter Android</p>
-                        <P>10%</P>
-                    </div>
-                    <div class="bar" data-aos="fade-up">
-                        <span class="flutter"></span>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="title_head" data-aos="zoom-in-down">
+          <p>My Skills</p>
         </div>
+        <div class="skills_main" data-aos="fade-up">
+          <div class="skill_bar">
+            <div class="info" data-aos="fade-up">
+              <p>HTML</p>
+              <p>90%</p>
+            </div>
+            <div class="bar" data-aos="fade-up">
+              <span class="html"></span>
+            </div>
+          </div>
+          <div class="skill_bar">
+            <div class="info" data-aos="fade-up">
+              <p>CSS</p>
+              <p>80%</p>
+            </div>
+            <div class="bar" data-aos="fade-up">
+              <span class="css"></span>
+            </div>
+          </div>
+          <div class="skill_bar">
+            <div class="info" data-aos="fade-up">
+              <p>Java Script</p>
+              <p>50%</p>
+            </div>
+            <div class="bar" data-aos="fade-up">
+              <span class="js"></span>
+            </div>
+          </div>
+          <div class="skill_bar">
+            <div class="info" data-aos="fade-up">
+              <p>C</p>
+              <p>85%</p>
+            </div>
+            <div class="bar" data-aos="fade-up">
+              <span class="c"></span>
+            </div>
+          </div>
+          <div class="skill_bar">
+            <div class="info" data-aos="up">
+              <p>Python</p>
+              <p>40%</p>
+            </div>
+            <div class="bar" data-aos="fade-up">
+              <span class="python"></span>
+            </div>
+          </div>
+          <div class="skill_bar">
+            <div class="info" data-aos="fade-up">
+              <p>JAVA</p>
+              <p>30%</p>
+            </div>
+            <div class="bar" data-aos="fade-up">
+              <span class="java"></span>
+            </div>
+          </div>
+          <div class="skill_bar">
+            <div class="info" data-aos="fade-up">
+              <p>React</p>
+              <p>40%</p>
+            </div>
+            <div class="bar" data-aos="fade-up">
+              <span class="react"></span>
+            </div>
+          </div>
+          <div class="skill_bar">
+            <div class="info" data-aos="fade-up">
+              <p>Flutter Android</p>
+              <p>10%</p>
+            </div>
+            <div class="bar" data-aos="fade-up">
+              <span class="flutter"></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- --------------------Projects-------------------- -->
 
     <div id="projects">
-        <div class="container">
-            <div class="title_head" data-aos="zoom-in-down">
-                <p>My Projects</p>
-            </div>
-            <div class="work-list">
-                <div class="work" data-aos="fade-up">
-                    <img src="images/navbar.WebP" alt="">
-                    <div class="layer">
-                        <h3>Responsive Navigation Bar</h3>
-                        <p>A responsive navigation bar made using React</p>
-                        <a href="https://github.com/adeeburrahman11/react-navbar/tree/main/react-navbar"
-                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work" data-aos="fade-up">
-                    <img src="images/portfolio.WebP" alt="">
-                    <div class="layer">
-                        <h3>Portfolio</h3>
-                        <p>My Portfolio made using HTML, CSS and JavaScript. Responsive for different screen ratios with
-                            added dark theme option</p>
-                        <a href="https://github.com/adeeburrahman11/portfolio" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work" data-aos="fade-up">
-                    <img src="images/dice_roll.WebP" alt="">
-                    <div class="layer">
-                        <h3>Dice Roll</h3>
-                        <p>A dice roll mobile application made using Flutter</p>
-                        <a href="https://github.com/adeeburrahman11/dice_roll" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="https://github.com/adeeburrahman11?tab=repositories" class="btn-projects" target="_blank"
-                data-aos="fade-up">See
-                more</a>
+      <div class="container">
+        <div class="title_head" data-aos="zoom-in-down">
+          <p>My Projects</p>
         </div>
+        <div class="work-list">
+          <div class="work" data-aos="fade-up">
+            <img src="images/navbar.WebP" alt="" />
+            <div class="layer">
+              <h3>Responsive Navigation Bar</h3>
+              <p>A responsive navigation bar made using React</p>
+              <a
+                href="https://github.com/adeeburrahman11/react-navbar/tree/main/react-navbar"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work" data-aos="fade-up">
+            <img src="images/portfolio.WebP" alt="" />
+            <div class="layer">
+              <h3>Portfolio</h3>
+              <p>
+                My Portfolio made using HTML, CSS and JavaScript. Responsive for
+                different screen ratios with added dark theme option
+              </p>
+              <a
+                href="https://github.com/adeeburrahman11/portfolio"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work" data-aos="fade-up">
+            <img src="images/dice_roll.WebP" alt="" />
+            <div class="layer">
+              <h3>Dice Roll</h3>
+              <p>A dice roll mobile application made using Flutter</p>
+              <a
+                href="https://github.com/adeeburrahman11/dice_roll"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://github.com/adeeburrahman11?tab=repositories"
+          class="btn-projects"
+          target="_blank"
+          data-aos="fade-up"
+          >See more</a
+        >
+      </div>
     </div>
     <!-- --------------------Contact-------------------- -->
 
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <div class="sub-title" data-aos="zoom-in-down">
-                        <p>Contact Me</p>
-                    </div>
-                    <p data-aos="fade-down">
-                        <i class="fa-regular fa-envelope "></i>adeeburrahman9021@gmail.com
-                    </p>
-                    <p data-aos="fade-down"><i class="fa-solid fa-mobile-screen-button "></i> +91
-                        9623244898</p>
-                    <div class="social-icons" data-aos="fade-up">
-                        <a href="https://www.instagram.com/just.addy_11/?igshid=MzMyNGUyNmU2YQ%3D%3D" target="_blank"><i
-                                class="fa-brands fa-instagram "></i></a>
-                        <a href="https://twitter.com/adeebur_rahman" target="_blank"><i
-                                class="fa-brands fa-x-twitter "></i></a>
-                        <a href="https://www.linkedin.com/in/adeebur-rahman/" target="_blank"><i
-                                class="fa-brands fa-linkedin-in "></i></a>
-                        <a href="https://github.com/adeeburrahman11" target="_blank"><i
-                                class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a href="images/AdeeburRahman_Resume.pdf" download class="btn-projects btn2"
-                        data-aos="zoom-in-up">Download Resume</a>
-                </div>
-                <div class="contact-right" data-aos="fade-in">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" autocomplete="name">
-                        <input type="text" name="email" placeholder="Your E-mail" autocomplete="email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message" autocomplete="off"
-                            required></textarea>
-                        <button type="submit" class="btn-projects btn2" data-aos="fade-up">Submit</button>
-                    </form>
-                    <div id="msg"></div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <div class="sub-title" data-aos="zoom-in-down">
+              <p>Contact Me</p>
             </div>
+            <p data-aos="fade-down">
+              <i class="fa-regular fa-envelope"></i>adeeburrahman9021@gmail.com
+            </p>
+            <p data-aos="fade-down">
+              <i class="fa-solid fa-mobile-screen-button"></i> +91 9623244898
+            </p>
+            <div class="social-icons" data-aos="fade-up">
+              <a
+                href="https://www.instagram.com/just.addy_11/?igshid=MzMyNGUyNmU2YQ%3D%3D"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/adeebur_rahman" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/adeebur-rahman/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="https://github.com/adeeburrahman11" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a
+              href="images/AdeeburRahman_Resume.pdf"
+              download
+              class="btn-projects btn2"
+              data-aos="zoom-in-up"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right" data-aos="fade-in">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                autocomplete="name"
+              />
+              <input
+                type="text"
+                name="email"
+                placeholder="Your E-mail"
+                autocomplete="email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                autocomplete="off"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                class="btn-projects btn2"
+                data-aos="fade-up"
+              >
+                Submit
+              </button>
+            </form>
+            <div id="msg"></div>
+          </div>
         </div>
-        <div class="copyright">
-            <p>Copyright © 2023 Adeebur Rahman. Made with <i class="fa-solid fa-heart"></i></p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © 2023. Made with
+          <i class="fa-solid fa-heart"></i> by Adeebur Rahman.
+        </p>
+      </div>
     </div>
     <div id="progress">
-        <span id="progress_value"><i class="fa-solid fa-up-long fa-bounce fa-xl"></i></span>
+      <span id="progress_value"
+        ><i class="fa-solid fa-up-long fa-bounce fa-xl"></i
+      ></span>
     </div>
-
-</body>
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<script src="script.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
+  </body>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
     AOS.init({
-        offset: 80,
-        // delay: 500,
+      offset: 80,
+      // delay: 500,
     });
-</script>
-
+  </script>
 </html>
